@@ -7,378 +7,173 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <title>Bare - Start Bootstrap Template</title>
-    <!-- Favicon-->
+    <title>Ismaël Balaghni</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- Responsive navbar-->
-    <div id="nav-placeholder">
+    <div id="customHeader">
     </div>
 
     <script>
         $(function () {
-            $("#nav-placeholder").load("/components/navbar.html");
+            $("#customHeader").load("/components/header.html");
         });
     </script>
     <!-- Page content-->
-    <div class="row">
-        <div class="col">
-            <p></p>
-        </div>
-        <div class="col">
-            <p></p>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="text-center mx-5 pt-5">
-            <div class="row">
-                <div class="col">
-                    <h1>A Bootstrap 5 Starter Template</h1>
+    <main class="flex-shrink-0">
+        <div class="container-fluid">
+            <div class="text-center mx-5 pt-5">
+                <div class="row">
+                    <div class="col">
+                        <h1>Bienvenue chez moi ! 👋</h1>
+                        <p>Alumni ESIEA depuis septembre 2022, diplômé en Ingénierie Logicielle/Systèmes d'Information et développeur chez Thales, je suis Ismaël.</p>
+                        <img src="/assets/ismael.jpg" class="img-thumbnail" alt="Moi en vacances portant un tee-shirt Star Wars" width="350" height="350">
+                        <p><em>C'est moi en vacances portant un tee-shirt Star Wars.<br>J'aime bien la franchise.</em></p>
+                    </div>
+                    <div class="col">
+                        <h2>Qui je suis-je ? 🧑</h2>
+                        <p>
+                            Je suis passionné d'🖥️ et de nouvelles technologies depuis mon plus jeune âge. J'ai réussi à
+                            faire planter Internet Explorer 6 quand c'était encore le navigateur à la mode. J'ai toujours
+                            essayé de découvrir de nouvelles choses, de
+                            nouveaux logiciels, de nouveaux systèmes d'exploitation. Fidèle à Windows et aux services et
+                            logiciels Microsoft depuis le début, c'est mon rêve ultime de travailler chez eux.
+                        </p>
+                        <p>
+                            Sinon, j'aime bien la 🎵, les 🎞️ et je commence à m'intéresser de plus en plus aux médias et au
+                            journalisme. Les habillages de chaînes de télévision m'intéressent de plus en plus. J'aime aussi
+                            le football américain, j'aime bien regarder
+                            en tout cas. J'ai découvert ce magnifique sport avec le Superbowl 53 qui a vu la victoire de mon
+                            équipe de cœur aujourd'hui que sont les Patriots. Depuis peu, j'ai aussi commencé à m'intéresser
+                            au hockey (le championnat nord-américain
+                            notamment), coup de cœur pour les Canadiens de Montréal et des Maple Leafs de Toronto.
+                        </p>
+                        <h2>Les technos que j'ai vues ⚙️</h2>
+                        <div class="d-grid gap-3 p-2">
+                            <div class="row">
+                                <div class="col"><i class="devicon-android-plain colored rounded img-thumbnail mt-5" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-arduino-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-c-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-cplusplus-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-css3-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-git-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-html5-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-java-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-matlab-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-python-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-qt-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <h1 align="center">Bienvenue chez moi ! 👋</h1>
-                    <p>Alumni ESIEA depuis septembre 2022, diplômé en Ingénierie Logicielle/Systèmes d'Information et
-                        développeur chez Thales, je suis Ismaël.</p>
-                    <h2>Qui je suis-je ? 🧑</h2>
-                    <p>
-                        Je suis passionné d'🖥️ et de nouvelles technologies depuis mon plus jeune âge. J'ai réussi à
-                        faire planter Internet Explorer 6 quand c'était encore le navigateur à la mode. J'ai toujours
-                        essayé de découvrir de nouvelles choses, de
-                        nouveaux logiciels, de nouveaux systèmes d'exploitation. Fidèle à Windows et aux services et
-                        logiciels Microsoft depuis le début, c'est mon rêve ultime de travailler chez eux.
-                    </p>
-                    <p>
-                        Sinon, j'aime bien la 🎵, les 🎞️ et je commence à m'intéresser de plus en plus aux médias et au
-                        journalisme. Les habillages de chaînes de télévision m'intéressent de plus en plus. J'aime aussi
-                        le football américain, j'aime bien regarder
-                        en tout cas. J'ai découvert ce magnifique sport avec le Superbowl 53 qui a vu la victoire de mon
-                        équipe de cœur aujourd'hui que sont les Patriots. Depuis peu, j'ai aussi commencé à m'intéresser
-                        au hockey (le championnat nord-américain
-                        notamment), coup de cœur pour les Canadiens de Montréal et des Maple Leafs de Toronto.
-                    </p>
-                    <h2>Les technos que j'ai vues ⚙️</h2>
-                    <p>
-                        <a href="https://developer.android.com" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/develop/icons/android/android-original.svg"
-                                alt="android" width="40" height="40" />
-                        </a>
-                        <a href="https://www.arduino.cc/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/develop/icons/arduino/arduino-original.svg"
-                                alt="arduino" width="40" height="40" />
-                        </a>
-                        <a href="https://www.cprogramming.com/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/develop/icons/c/c-original.svg"
-                                alt="c" width="40" height="40" />
-                        </a>
-                        <a href="https://www.w3schools.com/cpp/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/develop/icons/cplusplus/cplusplus-original.svg"
-                                alt="cplusplus" width="40" height="40" />
-                        </a>
-                        <a href="https://www.w3schools.com/css/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/develop/icons/css3/css3-original-wordmark.svg"
-                                alt="css3" width="40" height="40" />
-                        </a>
-                        <a href="https://git-scm.com/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/develop/icons/git/git-original.svg"
-                                alt="git" width="40" height="40" />
-                        </a>
-                        <a href="https://www.w3.org/html/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/develop/icons/html5/html5-original.svg"
-                                alt="html5" width="40" height="40" />
-                        </a>
-                        <a href="https://www.java.com" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/develop/icons/java/java-original.svg"
-                                alt="java" width="40" height="40" />
-                        </a>
-                        <a href="https://www.mathworks.com/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/develop/icons/matlab/matlab-original.svg"
-                                alt="matlab" width="40" height="40" />
-                        </a>
-                        <a href="https://www.python.org" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/develop/icons/python/python-original.svg"
-                                alt="python" width="40" height="40" />
-                        </a>
-                        <a href="https://www.qt.io/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/develop/icons/qt/qt-original.svg"
-                                alt="qt" width="40" height="40" />
-                        </a>
-                        <a href="https://unity.com/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/develop/icons/unity/unity-original.svg"
-                                alt="unity" width="40" height="40" />
-                        </a>
-                    </p>
-                    <h2>Les technos que j'ai vues et que j'aimerais approfondir 🔨⚙️</h2>
-                    <p>
-                        <a href="https://angular.io" target="_blank">
-                            <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://aws.amazon.com" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                                alt="aws" width="40" height="40" />
-                        </a>
-                        <a href="https://www.gnu.org/software/bash/" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://www.blender.org/" target="_blank">
-                            <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg"
-                                alt="blender" width="40" height="40" />
-                        </a>
-                        <a href="https://www.w3schools.com/cs/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
-                                alt="csharp" width="40" height="40" />
-                        </a>
-                        <a href="https://www.w3schools.com/css/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                                alt="css3" width="40" height="40" />
-                        </a>
-                        <a href="https://www.docker.com/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
-                                alt="docker" width="40" height="40" />
-                        </a>
-                        <a href="https://heroku.com" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40"
-                                height="40" />
-                        </a>
-                        <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg"
-                                alt="illustrator" width="40" height="40" />
-                        </a>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                                alt="javascript" width="40" height="40" />
-                        </a>
-                        <a href="https://jekyllrb.com/" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg" alt="jekyll"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://www.linux.org/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
-                                alt="linux" width="40" height="40" />
-                        </a>
-                        <a href="https://www.mysql.com/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                                alt="mysql" width="40" height="40" />
-                        </a>
-                        <a href="https://nodejs.org" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-                                alt="nodejs" width="40" height="40" />
-                        </a>
-                        <a href="https://www.oracle.com/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg"
-                                alt="oracle" width="40" height="40" />
-                        </a>
-                        <a href="https://www.photoshop.com/en" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
-                                alt="photoshop" width="40" height="40" />
-                        </a>
-                        <a href="https://www.php.net" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
-                                alt="php" width="40" height="40" />
-                        </a>
-                        <a href="https://www.postgresql.org" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
-                                alt="postgresql" width="40" height="40" />
-                        </a>
-                        <a href="https://postman.com" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://www.ruby-lang.org/en/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg"
-                                alt="ruby" width="40" height="40" />
-                        </a>
-                        <a href="https://sass-lang.com" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
-                                alt="sass" width="40" height="40" />
-                        </a>
-                        <a href="https://spring.io/" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://unity.com/" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40"
-                                height="40" />
-                        </a>
-                        <a href="https://unrealengine.com/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg"
-                                alt="unreal" width="40" height="40" />
-                        </a>
-                        <a href="https://www.adobe.com/products/xd.html" target="_blank">
-                            <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40"
-                                height="40" />
-                        </a>
-                    </p>
-                    <h2>Les technos que je souhaite découvrir et apprendre 📚⚙️</h2>
-                    <p>
-                        <a href="https://aws.amazon.com/amplify/" target="_blank">
-                            <img src="https://docs.amplify.aws/assets/logo-dark.svg" alt="amplify" width="40"
-                                height="40" />
-                        </a>
-                        <a href="https://angular.io" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg"
-                                alt="angularjs" width="40" height="40" />
-                        </a>
-                        <a href="https://azure.microsoft.com/en-in/" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg"
-                                alt="azure" width="40" height="40" />
-                        </a>
-                        <a href="https://getbootstrap.com" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-                                alt="bootstrap" width="40" height="40" />
-                        </a>
-                        <a href="https://dart.dev" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://www.djangoproject.com/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg"
-                                alt="django" width="40" height="40" />
-                        </a>
-                        <a href="https://dotnet.microsoft.com/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg"
-                                alt="dotnet" width="40" height="40" />
-                        </a>
-                        <a href="https://www.electronjs.org" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg"
-                                alt="electron" width="40" height="40" />
-                        </a>
-                        <a href="https://firebase.google.com/" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://flutter.dev" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://cloud.google.com" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://grafana.com" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://www.jenkins.io" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://kotlinlang.org" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://kubernetes.io" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://www.microsoft.com/en-us/sql-server" target="_blank">
-                            <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://www.nginx.com" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg"
-                                alt="nginx" width="40" height="40" />
-                        </a>
-                        <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html"
-                            target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg"
-                                alt="objectivec" width="40" height="40" />
-                        </a>
-                        <a href="https://www.perl.org/" target="_blank">
-                            <img src="https://api.iconify.design/logos-perl.svg" alt="perl" width="40" height="40" />
-                        </a>
-                        <a href="https://postman.com" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://www.rabbitmq.com" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg" alt="rabbitMQ"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://rubyonrails.org" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg"
-                                alt="rails" width="40" height="40" />
-                        </a>
-                        <a href="https://reactjs.org/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-                                alt="react" width="40" height="40" />
-                        </a>
-                        <a href="https://reactnative.dev/" target="_blank">
-                            <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40"
-                                height="40" />
-                        </a>
-                        <a href="https://redux.js.org" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
-                                alt="redux" width="40" height="40" />
-                        </a>
-                        <a href="https://www.sqlite.org/" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40"
-                                height="40" />
-                        </a>
-                        <a href="https://developer.apple.com/swift/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg"
-                                alt="swift" width="40" height="40" />
-                        </a>
-                        <a href="https://www.tensorflow.org" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://travis-ci.org" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/travis-ci/travis-ci-icon.svg" alt="travisci"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://www.typescriptlang.org/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-                                alt="typescript" width="40" height="40" />
-                        </a>
-                        <a href="https://unrealengine.com/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg"
-                                alt="unreal" width="40" height="40" />
-                        </a>
-                        <a href="https://www.vagrantup.com/" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg" alt="vagrant"
-                                width="40" height="40" />
-                        </a>
-                        <a href="https://vuejs.org/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
-                                alt="vuejs" width="40" height="40" />
-                        </a>
-                        <a href="https://vuetifyjs.com/en/" target="_blank">
-                            <img src="https://bestofjs.org/logos/vuetify.svg" alt="vuetify" width="40" height="40" />
-                        </a>
-                        <a href="https://webpack.js.org" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg"
-                                alt="webpack" width="40" height="40" />
-                        </a>
-                        <a href="https://dotnet.microsoft.com/apps/xamarin" target="_blank">
-                            <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/xamarin.svg"
-                                alt="xamarin" width="40" height="40" />
-                        </a>
-                        <a href="https://zapier.com" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40"
-                                height="40" />
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>Bootstrap v5.2.3</p>
-                </div>
-                <div class="col">
-                    <i class="bi-alarm"></i>
+                <div class="row">
+                    <div class="col">
+                        <h2>Les technos que j'ai vues et que j'aimerais approfondir 🔨⚙️</h2>
+                        <div class="d-grid gap-3 p-2">
+                            <div class="row">
+                                <div class="col"><i class="devicon-angular colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-amazonwebservices-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-ansible-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-bash-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-blender-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-csharp-plain colored rounded img-thumbnail mt-5" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-css3-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-docker-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-heroku-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-jekyllrb colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-linux-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><i class="devicon-illustrator-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-mysql-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-nodejs-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-oracle-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-photoshop-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-php-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-postgresql-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-postman colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-ruby-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-sass-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><i class="devicon-spring-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"> <i class="devicon-unity-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-unrealengine-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-xd-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h2>Les technos que je souhaite découvrir et apprendre 📚⚙️</h2>
+                        <div class="d-grid gap-3 p-2">
+                            <div class="row">
+                                <div class="col"><i class="devicon-amplify colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-angularjs-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-azure-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-bootstrap-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-dart-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-django-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-dot-net-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-electron-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-firebase-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-flutter-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-googlecloud-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><i class="devicon-grafana-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-jenkins-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-kotlin-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-kubernetes-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-microsoftsqlserver-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-nginx-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-objectivec-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-ocaml-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-postman colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-rabbitmq colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-rails-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><i class="devicon-react-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-reactnative colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-redux-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-sqlite-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-swift-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-tensorflow-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-travis-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-typescript-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-unrealengine-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-vagrant-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-vuejs-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><i class="devicon-vuetify-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-webpack-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-xamarin-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                                <div class="col"><i class="devicon-zapier colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </main>
+    <!-- Custom footer -->
+    <div id="customFooter">
+
     </div>
+    <script>
+        $(function () {
+            $("#customFooter").load("/components/footer.html");
+        });
+    </script>
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- Core theme JS-->
     <script src="/js/scripts.js"></script>
 </body>

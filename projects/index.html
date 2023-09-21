@@ -1,38 +1,75 @@
 <html>
-<header>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <title>Projets</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="/css/styles.css" rel="stylesheet" />
-</header>
-
-<body>
-    <!-- Responsive navbar-->
-    <div id="nav-placeholder">
-
-    </div>
-
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("/components/navbar.html");
-        });
-    </script>
-    <!-- Page content-->
-    <div class="container">
-        <div class="text-center mt-5">
-            <p>Test</p>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>Ismaël Balaghni</title>
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        <link rel="stylesheet" href="/css/custom.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <div id="customHeader">
         </div>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="/js/scripts.js"></script>
-</body>
-
+        <script>
+            $(function () {
+                $("#customHeader").load("/components/header.html");
+            });
+        </script>
+        <!-- Page content-->
+        <main class="flex-shrink-0">
+            <div class="container-fluid">
+                <div class="text-center mt-5">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="sweng-tab" data-bs-toggle="pill" data-bs-target="#sweng" type="button" role="tab" aria-controls="sweng" aria-selected="true">Projets IUT</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="apprenticeship-tab" data-bs-toggle="pill" data-bs-target="#apprenticeship" type="button" role="tab" aria-controls="apprenticeship" aria-selected="false">Projets ESIEA</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="internship-tab" data-bs-toggle="pill" data-bs-target="#internship" type="button" role="tab" aria-controls="internship" aria-selected="false">Projets personnels</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="sweng" role="tabpanel" aria-labelledby="sweng" tabindex="0"></div>
+                        <div class="tab-pane fade" id="apprenticeship" role="tabpanel" aria-labelledby="apprenticeship-tab" tabindex="0"></div>
+                        <div class="tab-pane fade" id="internship" role="tabpanel" aria-labelledby="internship-tab" tabindex="0"></div>
+                    </div>
+                    <script>
+                        $(function () {
+                            $("#apprenticeship").load("/work/apprenticeship.html");
+                        });
+                    </script>
+                    <script>
+                        $(function () {
+                            $("#internship").load("/work/internship.html");
+                        });
+                    </script>
+                    <script>
+                        $(function () {
+                            $("#sweng").load("/work/sweng.html");
+                        });
+                    </script>
+                </div>
+            </div>
+        </main>
+        <!-- Custom footer -->
+        <div id="customFooter">
+        </div>
+        <script>
+            $(function () {
+                $("#customFooter").load("/components/footer.html");
+            });
+        </script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/js/scripts.js"></script>
+    </body>
 </html>
