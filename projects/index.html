@@ -25,35 +25,35 @@
         <main class="flex-shrink-0">
             <div class="container-fluid">
                 <div class="text-center mt-5">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="sweng-tab" data-bs-toggle="pill" data-bs-target="#sweng" type="button" role="tab" aria-controls="sweng" aria-selected="true">Projets IUT</button>
+                            <button class="nav-link active" id="dut-tab" data-bs-toggle="pill" data-bs-target="#dut" type="button" role="tab" aria-controls="dut" aria-selected="true">Projets IUT</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="apprenticeship-tab" data-bs-toggle="pill" data-bs-target="#apprenticeship" type="button" role="tab" aria-controls="apprenticeship" aria-selected="false">Projets ESIEA</button>
+                            <button class="nav-link" id="esiea-tab" data-bs-toggle="pill" data-bs-target="#esiea" type="button" role="tab" aria-controls="esiea" aria-selected="false">Projets ESIEA</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="internship-tab" data-bs-toggle="pill" data-bs-target="#internship" type="button" role="tab" aria-controls="internship" aria-selected="false">Projets personnels</button>
+                            <button class="nav-link" id="personal-tab" data-bs-toggle="pill" data-bs-target="#personal" type="button" role="tab" aria-controls="personal" aria-selected="false">Projets personnels</button>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="sweng" role="tabpanel" aria-labelledby="sweng" tabindex="0"></div>
-                        <div class="tab-pane fade" id="apprenticeship" role="tabpanel" aria-labelledby="apprenticeship-tab" tabindex="0"></div>
-                        <div class="tab-pane fade" id="internship" role="tabpanel" aria-labelledby="internship-tab" tabindex="0"></div>
+                        <div class="tab-pane fade show active" id="dut" role="tabpanel" aria-labelledby="dut" tabindex="0"></div>
+                        <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab" tabindex="0"></div>
+                        <div class="tab-pane fade" id="esiea" role="tabpanel" aria-labelledby="esiea-tab" tabindex="0"></div>
                     </div>
                     <script>
                         $(function () {
-                            $("#apprenticeship").load("/work/apprenticeship.html");
+                            $("#dut").load("/projects/dut.html");
                         });
                     </script>
                     <script>
                         $(function () {
-                            $("#internship").load("/work/internship.html");
+                            $("#esiea").load("/projects/esiea.html");
                         });
                     </script>
                     <script>
                         $(function () {
-                            $("#sweng").load("/work/sweng.html");
+                            $("#personal").load("/projects/personal.html");
                         });
                     </script>
                 </div>
