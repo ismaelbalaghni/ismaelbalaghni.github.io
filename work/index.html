@@ -1,21 +1,21 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Le site (statique) d'un jeune développeur." />
+        <meta name="author" content="Ismaël Balaghni <ismael@balaghni.paris>" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <title>Ismaël Balaghni</title>
         <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
         <link rel="stylesheet" href="/css/custom.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" integrity="sha384-mTX5j/NIzlehkuOql3BYfNpkDrnvRHS5S7V3ctncUhJjtlL1+85q8lCKi8A5sUb+" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </head>
     <body>
         <!-- Responsive navbar-->
-        <div id="customHeader">
-        </div>
+        <header id="customHeader">
+        </header>
         <script>
             $(function () {
                 $("#customHeader").load("/components/header.html");
@@ -23,52 +23,102 @@
         </script>
         <!-- Page content-->
         <main class="flex-shrink-0">
-            <div class="container-fluid">
-                <div class="text-center mt-5">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="sweng-tab" data-bs-toggle="pill" data-bs-target="#sweng" type="button" role="tab" aria-controls="sweng" aria-selected="true">Ingénieur développement logiciel</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="apprenticeship-tab" data-bs-toggle="pill" data-bs-target="#apprenticeship" type="button" role="tab" aria-controls="apprenticeship" aria-selected="false">Apprentissage</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="internship-tab" data-bs-toggle="pill" data-bs-target="#internship" type="button" role="tab" aria-controls="internship" aria-selected="false">Stage</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="sweng" role="tabpanel" aria-labelledby="sweng" tabindex="0"></div>
-                        <div class="tab-pane fade" id="apprenticeship" role="tabpanel" aria-labelledby="apprenticeship-tab" tabindex="0"></div>
-                        <div class="tab-pane fade" id="internship" role="tabpanel" aria-labelledby="internship-tab" tabindex="0"></div>
-                    </div>
-                    <script>
-                        $(function () {
-                            $("#apprenticeship").load("/work/apprenticeship.html");
-                        });
-                    </script>
-                    <script>
-                        $(function () {
-                            $("#internship").load("/work/internship.html");
-                        });
-                    </script>
-                    <script>
-                        $(function () {
-                            $("#sweng").load("/work/sweng.html");
-                        });
-                    </script>
+            <div class="container-fluid text-center justify-content-center">
+                <div id="sweng">
+                    <h1 class="display-6">
+                        Ingénieur développement logiciel<br>
+                        <small class="text-body-secondary">Ingénierie logicielle et systèmes d'information</small>
+                    </h1>
+                    <dl class="row row-cols-2">
+                        <dt class="col text-end">Période</dt>
+                        <dd class="col text-start">05/09/2022 - aujourd'hui</dd>
+                        <dt class="col align-middle text-end">Où</dt>
+                        <dd class="col text-start">Thales, Vélizy-Villacoublay (en mission sur Élancourt)</dd>
+                        <dt class="col text-end">Missions réalisées</dt>
+                        <dd class="col text-start">
+                            <ul class="list-unstyled"">
+                                <li>Participation à la réalisation de faits techniques</li>
+                                <li>Développement de nouvelles fonctionnalités dans un banc de test d&#39;équipements</li>
+                                <li>Mise en place de l&#39;intégration continue sur un projet dépourvu</li>
+                                <li>Mise en place de l&#39;analyse de la couverture de code</li>
+                            </ul>
+                        </dd>
+                        <dt class="col text-end">Technologies utilisées</dt>
+                        <dd class="col text-start">
+                            <ul class="list-unstyled">
+                                <li>Python <i class="devicon-python-plain align-middle"></i></li>
+                                <li>Qt <i class="devicon-qt-original colored align-middle"></i></li>
+                                <li>Jenkins <i class="devicon-jenkins-plain align-middle"></i></li>
+                                <li>SonarQube</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <hr>
+                <div id="apprenticeship">
+                    <h1 class="display-6">
+                        Apprenti Ingénieur<br>
+                        <small class="text-body-secondary">Ingénieur Système/IVV</small>
+                    </h1>
+                    <dl class="row row-cols-2">
+                        <dt class="col align-middle text-end">Période</dt>
+                        <dd class="col text-start">02/09/2019 - 31/08/2022</dd>
+                        <dt class="col align-middle text-end">Où</dt>
+                        <dd class="col text-start">Thales, Gennevilliers</dd>
+                        <dt class="col text-end">Missions</dt>
+                        <dd class="col text-start">
+                            <ul class="list-unstyled">
+                                <li>Création d&#39;outils</li>
+                                <li>Création de simulateurs d&#39;équipements et d&#39;interfaces de contrôle</li>
+                                <li>Rédaction de documents de spécification et de test</li>
+                                <li>Gestion de configuration</li>
+                            </ul>
+                        </dd>
+                        <dt class="col text-end">Technologies utilisées</dt>
+                        <dd class="col text-start">
+                            <ul class="list-inline">
+                                <li>Python <i class="devicon-python-plain align-middle"></i></li>
+                                <li>Qt <i class="devicon-qt-original colored align-middle"></i></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <hr>
+                <div id="internship">
+                    <h1 class="display-6">Stage de fin d'études</h1>
+                    <dl class="row row-cols-2">
+                        <dt class="col align-middle text-end">Période</dt>
+                        <dd class="col text-start">08/04/2019 - 26/07/2019</dd>
+                        <dt class="col align-middle text-end">Où</dt>
+                        <dd class="col text-start">Thales, Gennevilliers</dd>
+                        <dt class="col text-end">Missions réalisées</dt>
+                        <dd class="col text-start">
+                            <ul class="list-unstyled">
+                                <li>Création d&#39;un outil de description d&#39;interfaces logicielles d&#39;un équipement</li>
+                                <li>Rédaction de documents formalisés</li>
+                            </ul>
+                        </dd>
+                        <dt class="col text-end">Technologies utilisées</dt>
+                        <dd class="col text-start">
+                            <ul class="list-unstyled">
+                                <li>Python <i class="devicon-python-plain align-middle"></i></li>
+                                <li>Qt <i class="devicon-qt-original colored align-middle"></i></li>
+                            </ul>
+                        </dd>
+                    </dl>
                 </div>
             </div>
         </main>
         <!-- Custom footer -->
-        <div id="customFooter">
-        </div>
+        <footer class="footer m-auto py-3 bg-body-tertiary" id="customFooter">
+        </footer>
         <script>
             $(function () {
                 $("#customFooter").load("/components/footer.html");
             });
         </script>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <!-- Core theme JS-->
         <script src="/js/scripts.js"></script>
     </body>
