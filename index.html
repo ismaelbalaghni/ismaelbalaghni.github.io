@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Le site (statique) d'un jeune développeur." />
+    <meta name="author" content="Ismaël Balaghni <ismael@balaghni.paris>" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <title>Ismaël Balaghni</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="/css/custom.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" integrity="sha384-mTX5j/NIzlehkuOql3BYfNpkDrnvRHS5S7V3ctncUhJjtlL1+85q8lCKi8A5sUb+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- Responsive navbar-->
-    <div id="customHeader">
-    </div>
-
+    <header id="customHeader">
+    </header>
     <script>
         $(function () {
             $("#customHeader").load("/components/header.html");
         });
     </script>
+
     <!-- Page content-->
     <main class="flex-shrink-0">
         <div class="container-fluid">
             <div class="text-center mx-5 pt-5">
-                <div class="row">
+                <div class="row row-cols-2">
                     <div class="col">
                         <h1>Bienvenue chez moi ! 👋</h1>
                         <p>Alumni ESIEA depuis septembre 2022, diplômé en Ingénierie Logicielle/Systèmes d'Information et développeur chez Thales, je suis Ismaël.</p>
@@ -55,106 +55,89 @@
                             notamment), coup de cœur pour les Canadiens de Montréal et des Maple Leafs de Toronto.
                         </p>
                         <h2>Les technos que j'ai vues ⚙️</h2>
-                        <div class="hstack gap-3 p-2 flex-fill">
-                            <i class="devicon-android-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i>
-                            <i class="devicon-arduino-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i>
-                            <i class="devicon-c-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i>
-                            <i class="devicon-cplusplus-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i>
-                            <i class="devicon-css3-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i>
-                            <i class="devicon-git-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i>
-                            <i class="devicon-html5-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i>
-                            <i class="devicon-java-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i>
-                            <i class="devicon-matlab-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i>
-                            <i class="devicon-python-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i>
-                            <i class="devicon-qt-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i>
+                        <div class="row gy-3 row-cols-6">
+                            <div class="col"><i class="devicon-android-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-androidstudio-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-arduino-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-c-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-cplusplus-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-css3-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-git-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-html5-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-java-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-matlab-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-python-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-qt-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col">
-                        <h2>Les technos que j'ai vues et que j'aimerais approfondir 🔨⚙️</h2>
-                        <div class="d-grid gap-3 p-2">
-                            <div class="row">
-                                <div class="col"><i class="devicon-angular colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-amazonwebservices-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-ansible-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-bash-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-blender-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-csharp-plain colored rounded img-thumbnail mt-5" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-css3-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-docker-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-heroku-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-jekyllrb colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-linux-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><i class="devicon-illustrator-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-mysql-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-nodejs-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-oracle-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-photoshop-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-php-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-postgresql-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-postman colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-ruby-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-sass-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><i class="devicon-spring-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"> <i class="devicon-unity-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-unrealengine-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-xd-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            </div>
+                        <h2>Les technos que j'ai vues et que je veux approfondir 🔨⚙️</h2>
+                        <div class="row gy-3 row-cols-6">
+                            <div class="col"><i class="devicon-amazonwebservices-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-angular colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-ansible-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-bash-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-blender-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-bootstrap-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-csharp-plain colored rounded img-thumbnail mt-5" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-css3-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-docker-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-heroku-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-illustrator-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-jekyllrb colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-linux-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-mysql-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-nodejs-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-oracle-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-photoshop-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-php-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-postgresql-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-postman colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-ruby-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-sass-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-spring-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-typescript-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-unity-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-unrealengine-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                            <div class="col"><i class="devicon-xd-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
                         </div>
                     </div>
                     <div class="col">
                         <h2>Les technos que je souhaite découvrir et apprendre 📚⚙️</h2>
-                        <div class="d-grid gap-3 p-2">
-                            <div class="row">
-                                <div class="col"><i class="devicon-amplify colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-angularjs-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-azure-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-bootstrap-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-dart-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-django-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-dot-net-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-electron-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-firebase-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-flutter-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-googlecloud-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><i class="devicon-grafana-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-jenkins-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-kotlin-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-kubernetes-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-microsoftsqlserver-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-nginx-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-objectivec-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-ocaml-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-postman colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-rabbitmq colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-rails-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><i class="devicon-react-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-reactnative colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-redux-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-sqlite-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-swift-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-tensorflow-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-travis-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-typescript-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-unrealengine-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-vagrant-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-vuejs-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><i class="devicon-vuetify-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-webpack-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-xamarin-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                                <div class="col"><i class="devicon-zapier colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            </div>
+                        <div class="row gy-3 row-cols-6">
+                        <div class="col"><i class="devicon-angularjs-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-azure-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-dart-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-django-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-dot-net-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-electron-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-firebase-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-flutter-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-googlecloud-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-grafana-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-jenkins-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-kotlin-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-kubernetes-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-microsoftsqlserver-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-nginx-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-objectivec-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-ocaml-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-postman colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-rabbitmq colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-rails-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-react-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-reactnative colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-redux-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-sqlite-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-swift-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-tensorflow-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-travis-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-typescript-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-unrealengine-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-vagrant-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-vuejs-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-vuetify-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
+                        <div class="col"><i class="devicon-webpack-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
                         </div>
                     </div>
                 </div>
@@ -162,9 +145,8 @@
         </div>
     </main>
     <!-- Custom footer -->
-    <div id="customFooter">
-
-    </div>
+    <footer class="footer fixed-bottom mt-auto py-3 bg-body-tertiary" id="customFooter">
+    </footer>
     <script>
         $(function () {
             $("#customFooter").load("/components/footer.html");
