@@ -1,60 +1,70 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="fr" data-bs-theme="light">
     <head>
-        <meta charset="utf-8" >
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="/assets/android-chrome-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-        <link rel="me" href="https://mastodon.social/@ismascarade" />
-        <link rel="manifest" href="/assets/site.webmanifest">
-        <link rel="shortcut icon" href="/assets/favicon.ico">
-        <link rel="stylesheet" href="/css/custom.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" integrity="sha384-mTX5j/NIzlehkuOql3BYfNpkDrnvRHS5S7V3ctncUhJjtlL1+85q8lCKi8A5sUb+" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <meta name="author" content="Ismaël Balaghni <ismael@balaghni.paris>" >
-        <meta name="description" content="Le site (statique) d'un jeune développeur." >
-        <meta name="msapplication-config" content="/assets/browserconfig.xml">
-        <meta name="msapplication-TileColor" content="#00aba9">
-        <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="viewport" content="width=device-width, initial-scale=1" >
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Accueil - Ismaël Balaghni</title>
+        <link rel="shortcut icon" href="/assets/favicon.ico" />
+        <link rel="icon" href="/assets/favicon.ico" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <style>
+            main>.container {
+                padding: 60px 15px 0;
+            }
+        </style>
+        <meta name="description" content="Le site (statique) d'un jeune développeur.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     </head>
     <body>
-        <!-- Responsive navbar-->
-        <header id="customHeader">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+                <div class="container">
+                    <span class="navbar-brand">Ismaël Balaghni</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="/">Accueil</a>
+                            <a class="nav-link" href="/education/index.html">Éducation</a>
+                            <a class="nav-link" href="/work/index.html">Emplois</a>
+                            <a class="nav-link" href="/projects/index.html">Projets</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <script>
-            $(function () {
-                $("#customHeader").load("/components/header.html");
-            });
-        </script>
         <!-- Page content-->
         <main class="flex-shrink-0">
-            <div class="container-fluid text-center">
-                <div class="row row-cols-2">
+            <div class="container">
+                <div class="row row-cols-2 mt-3">
                     <div class="col">
-                        <h1>Bienvenue chez moi ! 👋</h1>
-                        <p>Alumni ESIEA depuis septembre 2022, diplômé en Ingénierie Logicielle/Systèmes d'Information et développeur chez Thales, je suis Ismaël.</p>
+                        <h1>Bienvenue chez moi !</h1>
+                        <p>Alumni ESIEA depuis septembre 2022, diplômé en Ingénierie Logicielle/Systèmes d&#039;Information et développeur chez Thales, je suis Ismaël.</p>
                         <figure class="figure">
-                            <img src="/assets/ismael.jpg" class="figure-img img-fluid rounded" alt="Moi en vacances portant un tee-shirt Star Wars" width="350" height="350">
+                            <img src="/assets/ismael.jpg" class="figure-img img-fluid rounded" alt="Moi en vacances portant un tee-shirt Star Wars" width="150" height="150">
                             <figcaption class="figure-caption">C'est moi en vacances portant un tee-shirt Star Wars.<br>J'aime bien la franchise.</figcaption>
                         </figure>
-                    </div>
-                    <div class="col">
-                        <h2>Qui je suis-je ? 🧑</h2>
+                        <h2>Qui je suis-je ?</h2>
                         <p>
-                            Je suis passionné d'🖥️ et de nouvelles technologies depuis mon plus jeune âge. J'ai réussi à
+                            Je suis passionné d'informatique et de nouvelles technologies depuis mon plus jeune âge. J'ai réussi à
                             faire planter Internet Explorer 6 quand c'était encore le navigateur à la mode. J'ai toujours
                             essayé de découvrir de nouvelles choses, de
                             nouveaux logiciels, de nouveaux systèmes d'exploitation. Fidèle à Windows et aux services et
                             logiciels Microsoft depuis le début, c'est mon rêve ultime de travailler chez eux.
                         </p>
                         <p>
-                            Sinon, j'aime bien la 🎵, les 🎞️ et je commence à m'intéresser de plus en plus aux médias et au
+                            Sinon, j'aime bien la musique, les films et je commence à m'intéresser de plus en plus aux médias et au
                             journalisme. Les habillages de chaînes de télévision m'intéressent de plus en plus. J'aime aussi
                             le football américain, j'aime bien regarder
                             en tout cas. J'ai découvert ce magnifique sport avec le Superbowl 53 qui a vu la victoire de mon
@@ -62,106 +72,107 @@
                             au hockey (le championnat nord-américain
                             notamment), coup de cœur pour les Canadiens de Montréal et des Maple Leafs de Toronto.
                         </p>
-                        <h2>Les technos que j'ai vues ⚙️</h2>
-                        <div class="row gy-3 row-cols-6">
-                            <div class="col"><i class="devicon-android-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-androidstudio-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-arduino-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-c-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-cplusplus-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-css3-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-git-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-html5-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-java-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-matlab-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-python-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-qt-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        </div>
                     </div>
                     <div class="col">
-                        <h2>Les technos que j'ai vues et que je veux approfondir 🔨⚙️</h2>
-                        <div class="row gy-3 row-cols-6">
-                            <div class="col"><i class="devicon-amazonwebservices-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-angular colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-ansible-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-bash-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-blender-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-bootstrap-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-csharp-plain colored rounded img-thumbnail mt-5" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-css3-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-docker-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-heroku-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-illustrator-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-jekyllrb colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-linux-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-mysql-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-nodejs-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-oracle-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-photoshop-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-php-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-postgresql-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-postman colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-ruby-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-sass-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-spring-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-typescript-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-unity-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-unrealengine-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                            <div class="col"><i class="devicon-xd-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <h2>Les technos que je souhaite découvrir et apprendre 📚⚙️</h2>
-                        <div class="row gy-3 row-cols-6">
-                        <div class="col"><i class="devicon-angularjs-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-azure-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-dart-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-django-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-dot-net-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-electron-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-firebase-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-flutter-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-googlecloud-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-grafana-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-jenkins-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-kotlin-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-kubernetes-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-microsoftsqlserver-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-nginx-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-objectivec-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-ocaml-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-postman colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-rabbitmq colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-rails-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-react-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-reactnative colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-redux-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-sqlite-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-swift-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-tensorflow-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-travis-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-typescript-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-unrealengine-original colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-vagrant-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-vuejs-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-vuetify-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        <div class="col"><i class="devicon-webpack-plain colored rounded img-thumbnail" style="font-size: 1.75rem;"></i></div>
-                        </div>
+                        <h2>Les technos que j'ai vues</h2>
+                        <ul class="list-group list-group-horizontal text-center">
+                            <li class="list-group-item flex-fill"><i class="devicon-android-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-androidstudio-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-arduino-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-c-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-cplusplus-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-css3-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-git-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-html5-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-java-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-matlab-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-python-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-qt-plain colored"></i></li>
+                          </ul>
+                        <h2>Les technos que j'ai vues et que je veux approfondir</h2>
+                        <ul class="list-group list-group-horizontal text-center">
+                            <li class="list-group-item flex-fill"><i class="devicon-amazonwebservices-original colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-angular colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-ansible-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-bash-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-blender-original colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-bootstrap-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-csharp-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-css3-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-docker-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-heroku-original colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-illustrator-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-jekyllrb colored"></i></li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal text-center">
+                            <li class="list-group-item flex-fill"><i class="devicon-linux-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-mysql-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-nodejs-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-oracle-original colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-photoshop-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-php-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-postgresql-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-postman colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-ruby-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-sass-original colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-spring-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-typescript-original colored"></i></li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal text-center">
+                            <li class="list-group-item"><i class="devicon-unity-original colored"></i></li>
+                            <li class="list-group-item"><i class="devicon-unrealengine-original colored"></i></li>
+                            <li class="list-group-item"><i class="devicon-xd-plain colored"></i></li>
+                        </ul>
+                        <h2>Les technos que je souhaite découvrir et apprendre</h2>
+                        <ul class="list-group list-group-horizontal text-center">
+                            <li class="list-group-item flex-fill"><i class="devicon-angularjs-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-azure-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-dart-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-django-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-dot-net-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-electron-original colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-firebase-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-flutter-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-googlecloud-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-grafana-original colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-jenkins-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-kotlin-plain colored"></i></li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal text-center">
+                            <li class="list-group-item flex-fill"><i class="devicon-kubernetes-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-microsoftsqlserver-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-nginx-original colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-objectivec-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-ocaml-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-postman colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-rabbitmq colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-rails-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-react-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-reactnative colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-redux-original colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-sqlite-plain colored"></i></li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal text-center">
+                            <li class="list-group-item flex-fill"><i class="devicon-swift-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-tensorflow-original colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-travis-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-typescript-original colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-unrealengine-original colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-vagrant-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-vuejs-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-vuetify-plain colored"></i></li>
+                            <li class="list-group-item flex-fill"><i class="devicon-webpack-plain colored"></i></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </main>
-        <!-- Custom footer -->
-        <footer class="footer fixed-bottom mt-auto py-3 bg-body-tertiary" id="customFooter">
+        <footer class="footer fixed-bottom mt-auto py-3 bg-body-tertiary">
+            <div class="container">
+                <span class="text-body-secondary">&copy; 2024 Isma&euml;l Balaghni.</span>
+            </div>
         </footer>
-        <script>
-            $(function () {
-                $("#customFooter").load("/components/footer.html");
-            });
-        </script>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <!-- Core theme JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
         <script src="/js/scripts.js"></script>
     </body>
-</html>
+</html> 

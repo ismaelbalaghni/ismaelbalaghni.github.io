@@ -1,38 +1,52 @@
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="fr" data-bs-theme="light">
     <head>
-        <meta charset="utf-8" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="/assets/android-chrome-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-        <link rel="manifest" href="/assets/site.webmanifest">
-        <link rel="shortcut icon" href="/assets/favicon.ico">
-        <link rel="stylesheet" href="/css/custom.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" integrity="sha384-mTX5j/NIzlehkuOql3BYfNpkDrnvRHS5S7V3ctncUhJjtlL1+85q8lCKi8A5sUb+" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <meta name="author" content="Ismaël Balaghni <ismael@balaghni.paris>" >
-        <meta name="description" content="Le site (statique) d'un jeune développeur." >
-        <meta name="msapplication-config" content="/assets/browserconfig.xml">
-        <meta name="msapplication-TileColor" content="#00aba9">
-        <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="viewport" content="width=device-width, initial-scale=1" >
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <title>Expérience pro - Ismaël Balaghni</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Emplois - Ismaël Balaghni</title>
+        <link rel="shortcut icon" href="/assets/favicon.ico" />
+        <link rel="icon" href="/assets/favicon.ico" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <style>
+            main>.container {
+                padding: 60px 15px 0;
+            }
+        </style>
+        <meta name="description" content="Le site (statique) d'un jeune développeur.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     </head>
     <body>
-        <!-- Responsive navbar-->
-        <header id="customHeader">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+                <div class="container">
+                    <span class="navbar-brand">Ismaël Balaghni</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-nav">
+                            <a class="nav-link"href="/">Accueil</a>
+                            <a class="nav-link" href="/education/index.html">Éducation</a>
+                            <a class="nav-link active" aria-current="page" href="/work/index.html">Emplois</a>
+                            <a class="nav-link" href="/projects/index.html">Projets</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <script>
-            $(function () {
-                $("#customHeader").load("/components/header.html");
-            });
-        </script>
         <!-- Page content-->
         <main class="flex-shrink-0">
-            <div class="container-fluid text-center justify-content-center">
+            <div class="container justify-content-center text-center">
                 <div id="sweng">
                     <h1 class="display-6">
                         Ingénieur développement logiciel<br>
@@ -45,7 +59,7 @@
                         <dd class="col text-start">Thales, Vélizy-Villacoublay (en mission sur Élancourt)</dd>
                         <dt class="col text-end">Missions réalisées</dt>
                         <dd class="col text-start">
-                            <ul class="list-unstyled"">
+                            <ul class="list-unstyled">
                                 <li>Participation à la réalisation de faits techniques</li>
                                 <li>Développement de nouvelles fonctionnalités dans un banc de test d&#39;équipements</li>
                                 <li>Mise en place de l&#39;intégration continue sur un projet dépourvu</li>
@@ -118,17 +132,12 @@
                 </div>
             </div>
         </main>
-        <!-- Custom footer -->
-        <footer class="footer m-auto py-3 bg-body-tertiary" id="customFooter">
+        <footer class="footer fixed-bottom mt-auto py-3 bg-body-tertiary">
+            <div class="container">
+                <span class="text-body-secondary">&copy; 2024 Isma&euml;l Balaghni.</span>
+            </div>
         </footer>
-        <script>
-            $(function () {
-                $("#customFooter").load("/components/footer.html");
-            });
-        </script>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <!-- Core theme JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
         <script src="/js/scripts.js"></script>
     </body>
 </html>
