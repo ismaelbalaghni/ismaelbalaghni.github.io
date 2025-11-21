@@ -1,0 +1,340 @@
+/* 
+   Theme: OS Native (System Gray)
+   Goal: Clean, structured, high-contrast borders, system fonts.
+*/
+
+:root {
+    /* System Colors (Dark Mode Default) */
+    --bg-app: #1e1e1e;
+    --bg-sidebar: #252526;
+    --bg-content: #1e1e1e;
+    --bg-hover: #2a2d2e;
+    --bg-active: #37373d;
+
+    --border-color: #333333;
+    --border-focus: #007fd4;
+
+    --text-primary: #cccccc;
+    --text-secondary: #969696;
+    --text-active: #ffffff;
+
+    --accent-color: #007fd4;
+
+    /* Typography */
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+    /* Layout */
+    --sidebar-width: 250px;
+    --header-height: 0px;
+    /* No top header in this layout */
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    /* App-like feel */
+}
+
+body {
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 13px;
+    /* System UI size */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+}
+
+/* Layout Structure */
+.app-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--bg-sidebar);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.sidebar-header {
+    padding: 10px 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: block;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    color: var(--text-primary);
+    text-decoration: none;
+    cursor: pointer;
+    /* OS feel */
+    border-left: 2px solid transparent;
+}
+
+.nav-link:hover {
+    background-color: var(--bg-hover);
+}
+
+.nav-link.active {
+    background-color: var(--bg-active);
+    color: var(--text-active);
+    border-left-color: var(--accent-color);
+}
+
+.nav-icon {
+    margin-right: 10px;
+    width: 16px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    background-color: var(--bg-content);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content Header (Breadcrumb/Title bar) */
+.content-header {
+    height: 45px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-content);
+    z-index: 10;
+}
+
+.page-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-active);
+}
+
+.breadcrumb {
+    color: var(--text-secondary);
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+/* Page Content */
+.page-body {
+    padding: 30px 40px;
+    max-width: 900px;
+}
+
+/* Typography & Elements */
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-active);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-active);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-active);
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+/* Cards / Lists (Finder Style) */
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: var(--border-color);
+    /* Gap color */
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.list-item {
+    background-color: var(--bg-content);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* For absolute positioning of meta */
+    padding-right: 140px;
+    /* Make room for meta */
+    transition: background-color 0.1s;
+}
+
+.list-item:hover {
+    background-color: var(--bg-hover);
+}
+
+.item-main {
+    flex: 1;
+}
+
+.item-meta {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    text-align: right;
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin: 0;
+    pointer-events: none;
+    /* Let clicks pass through if needed, but button needs pointer-events: auto */
+}
+
+.item-meta a {
+    pointer-events: auto;
+}
+
+.tag-group {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.tag {
+    font-size: 11px;
+    padding: 2px 8px;
+    background-color: var(--bg-active);
+    border-radius: 10px;
+    color: var(--text-primary);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--bg-hover);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-list {
+        display: flex;
+        overflow-x: auto;
+        padding: 5px;
+    }
+
+    .sidebar-header {
+        display: none;
+    }
+
+    .nav-link {
+        padding: 8px 12px;
+        white-space: nowrap;
+        border-left: none;
+        border-bottom: 2px solid transparent;
+    }
+
+    .nav-link.active {
+        border-left: none;
+        border-bottom-color: var(--accent-color);
+    }
+
+    .page-body {
+        padding: 20px;
+    }
+}
+
+/* Language Banner */
+.language-banner {
+    background-color: var(--bg-hover);
+    border: 1px solid var(--accent-color);
+    color: var(--text-primary);
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
