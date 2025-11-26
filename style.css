@@ -61,7 +61,7 @@ body {
 .app-container {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
 }
 
 /* Sidebar */
@@ -322,19 +322,4 @@ p {
     .page-body {
         padding: 20px;
     }
-}
-
-/* Language Banner */
-.language-banner {
-    background-color: var(--bg-hover);
-    border: 1px solid var(--accent-color);
-    color: var(--text-primary);
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }

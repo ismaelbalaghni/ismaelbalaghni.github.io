@@ -4,14 +4,6 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Language Detection Banner (Progressive i18n Step 1) ---
-    const banner = document.getElementById('language-banner');
-    if (banner) {
-        const browserLang = navigator.language || navigator.userLanguage;
-        banner.textContent = `Detected Browser Language: ${browserLang}`;
-        banner.style.display = 'block';
-    }
-
     // --- Progressive i18n Step 2 & 3: Page Redirects ---
     const pathForRedirect = window.location.pathname;
     const isFrenchPage = pathForRedirect.includes('/fr/');
