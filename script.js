@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isFrenchPage = pathForRedirect.includes('/fr/');
 
     // Define pages that have translations
-    const translatablePages = ['index.html', 'projects.html'];
+    const translatablePages = ['index.html', 'projects.html', 'work.html', 'education.html'];
 
     // Check if current page is one of them (or root for index)
     let pageName = pathForRedirect.split('/').pop();
